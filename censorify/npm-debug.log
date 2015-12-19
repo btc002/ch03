@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.3.12
+3 info using node@v5.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/kimbum_young/Desktop/step1/censorify',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/kimbum_young/.npm/censorify/0.1.1/package.tgz not in flight; packing
+9 info lifecycle censorify@0.1.1~prepublish: censorify@0.1.1
+10 silly lifecycle censorify@0.1.1~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/kimbum_young/.npm/censorify/0.1.1/package.tgz',
+11 verbose tar pack   '/Users/kimbum_young/Desktop/step1/censorify' ]
+12 verbose tarball /Users/kimbum_young/.npm/censorify/0.1.1/package.tgz
+13 verbose folder /Users/kimbum_young/Desktop/step1/censorify
+14 verbose addLocalTarball adding from inside cache /Users/kimbum_young/.npm/censorify/0.1.1/package.tgz
+15 silly cache afterAdd censorify@0.1.1
+16 verbose afterAdd /Users/kimbum_young/.npm/censorify/0.1.1/package/package.json not in flight; writing
+17 verbose afterAdd /Users/kimbum_young/.npm/censorify/0.1.1/package/package.json written
+18 silly publish { author: { name: 'Brad Dayley' },
+18 silly publish   name: 'censorify',
+18 silly publish   version: '0.1.1',
+18 silly publish   main: 'censortext',
+18 silly publish   repository: { type: 'git', url: 'https://github.com/btc002/ch03/cesorify' },
+18 silly publish   keywords: [ 'censor', 'words' ],
+18 silly publish   engines: { node: '*' },
+18 silly publish   readme: 'ERROR: No README data found!',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   _id: 'censorify@0.1.1',
+18 silly publish   scripts: {},
+18 silly publish   _shasum: 'c890e079e2ee4e838cb952b8ef3ccbd372697303',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name censorify
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/censorify
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/kimbum_young/.npm/censorify/0.1.1/package.tgz
+26 verbose request uri https://registry.npmjs.org/censorify
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 7:29:28 PM
+29 verbose request using bearer token for auth
+30 verbose request id 04e008baa1eabc65
+31 http request PUT https://registry.npmjs.org/censorify
+32 http 403 https://registry.npmjs.org/censorify
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '101',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Sat, 19 Dec 2015 10:29:29 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-nrt6134-NRT',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1450520968.944315,VS0,VE437' }
+34 verbose request invalidating /Users/kimbum_young/.npm/registry.npmjs.org/censorify on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: You do not have permission to publish 'censorify'. Are you logged in as the correct user? : censorify
+36 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid censorify
+39 verbose cwd /Users/kimbum_young/Desktop/step1/censorify
+40 error Darwin 15.0.0
+41 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+42 error node v5.3.0
+43 error npm  v3.3.12
+44 error code E403
+45 error You do not have permission to publish 'censorify'. Are you logged in as the correct user? : censorify
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
